@@ -60,7 +60,7 @@ function [L, W, stats] = mw2srcdim(varargin)
 %
 %    Thingbaijam, K.K.S., P.M. Mai, and K. Goda (2017). New empirical earthquake
 %      source-scaling laws, Bulletin of Seismological Society America,
-%      107, 2225–2246.
+%      107, 2225â€“2246.
 %
 % WRITTEN by:
 %    Thingbaijam K.K.S (thingbaijam@gmail.com; 
@@ -84,7 +84,8 @@ function [L, W, stats] = mw2srcdim(varargin)
 %   (2) How to implement scaling relations from other authors?
 %       You got to write the matlab function. The name should be a unique 
 %       shorthand for the authors. TMG2017.m can be used a reference template. 
-%
+%       I prefer seperate function(s) for different authors for more flexiblity, 
+%       instead of simpler and more rigid table lookup.    
 
 if isempty(varargin)
     help mw2srcdim; return; 
